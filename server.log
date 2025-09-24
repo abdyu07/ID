@@ -1,0 +1,281 @@
+$ next dev --turbopack
+   ▲ Next.js 15.5.2 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://169.254.0.21:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 2.8s
+ ○ Compiling / ...
+ ✓ Compiled / in 8.1s
+ ⨯ ./app/page.tsx:2:1
+Ecmascript file had an error
+[0m [90m 1 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m'react'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [32m'use client'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mimport[39m { useState[33m,[39m useRef[33m,[39m useCallback } [36mfrom[39m [32m'react'[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m[0m
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./app/page.tsx:4:20
+Ecmascript file had an error
+[0m [90m 2 |[39m [32m'use client'[39m
+ [90m 3 |[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { useState[33m,[39m useRef[33m,[39m useCallback } [36mfrom[39m [32m'react'[39m
+ [90m   |[39m                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m
+ [90m 6 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m'@/components/ui/input'[39m
+ [90m 7 |[39m [36mimport[39m { [33mLabel[39m } [36mfrom[39m [32m'@/components/ui/label'[39m[0m
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/page.tsx:4:10
+Ecmascript file had an error
+[0m [90m 2 |[39m [32m'use client'[39m
+ [90m 3 |[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { useState[33m,[39m useRef[33m,[39m useCallback } [36mfrom[39m [32m'react'[39m
+ [90m   |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m
+ [90m 6 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m'@/components/ui/input'[39m
+ [90m 7 |[39m [36mimport[39m { [33mLabel[39m } [36mfrom[39m [32m'@/components/ui/label'[39m[0m
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+ ⨯ ./app/page.tsx:2:1
+Ecmascript file had an error
+[0m [90m 1 |[39m [36mimport[39m [33mReact[39m [36mfrom[39m [32m'react'[39m
+[31m[1m>[22m[39m[90m 2 |[39m [32m'use client'[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mimport[39m { useState[33m,[39m useRef[33m,[39m useCallback } [36mfrom[39m [32m'react'[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m[0m
+
+The "use client" directive must be placed before other expressions. Move it to the top of the file to resolve this issue.
+
+
+
+./app/page.tsx:4:20
+Ecmascript file had an error
+[0m [90m 2 |[39m [32m'use client'[39m
+ [90m 3 |[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { useState[33m,[39m useRef[33m,[39m useCallback } [36mfrom[39m [32m'react'[39m
+ [90m   |[39m                    [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m
+ [90m 6 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m'@/components/ui/input'[39m
+ [90m 7 |[39m [36mimport[39m { [33mLabel[39m } [36mfrom[39m [32m'@/components/ui/label'[39m[0m
+
+You're importing a component that needs `useRef`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+
+./app/page.tsx:4:10
+Ecmascript file had an error
+[0m [90m 2 |[39m [32m'use client'[39m
+ [90m 3 |[39m
+[31m[1m>[22m[39m[90m 4 |[39m [36mimport[39m { useState[33m,[39m useRef[33m,[39m useCallback } [36mfrom[39m [32m'react'[39m
+ [90m   |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 5 |[39m [36mimport[39m { [33mCard[39m[33m,[39m [33mCardContent[39m[33m,[39m [33mCardHeader[39m[33m,[39m [33mCardTitle[39m } [36mfrom[39m [32m'@/components/ui/card'[39m
+ [90m 6 |[39m [36mimport[39m { [33mInput[39m } [36mfrom[39m [32m'@/components/ui/input'[39m
+ [90m 7 |[39m [36mimport[39m { [33mLabel[39m } [36mfrom[39m [32m'@/components/ui/label'[39m[0m
+
+You're importing a component that needs `useState`. This React Hook only works in a Client Component. To fix, mark the file (or its parent) with the `"use client"` directive.
+
+ Learn more: https://nextjs.org/docs/app/api-reference/directives/use-client
+
+
+
+
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 2.7s
+ GET / 500 in 11097ms
+ GET / 500 in 5339ms
+ ⚠ Cross origin request detected from dull-pigs-grab.lindy.site to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 545ms
+ GET /favicon.ico 500 in 590ms
+ ✓ Compiled / in 252ms
+ ⨯ ReferenceError: React is not defined
+    at IDCardEditor (app/page.tsx:194:3)
+  192 |
+  193 |   // Generate QR code when data changes
+> 194 |   React.useEffect(() => {
+      |   ^
+  195 |     if (personalData.idNumber && personalData.surname) {
+  196 |       generateQRCode()
+  197 |     } {
+  digest: '392319876'
+}
+ GET / 500 in 1294ms
+ ⨯ ReferenceError: React is not defined
+    at IDCardEditor (app/page.tsx:194:3)
+  192 |
+  193 |   // Generate QR code when data changes
+> 194 |   React.useEffect(() => {
+      |   ^
+  195 |     if (personalData.idNumber && personalData.surname) {
+  196 |       generateQRCode()
+  197 |     } {
+  digest: '392319876'
+}
+ GET / 500 in 1348ms
+ GET /favicon.ico 200 in 484ms
+ ✓ Compiled in 302ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: React is not defined
+    at IDCardEditor (app/page.tsx:193:3)
+  191 |
+  192 |   // Generate QR code when data changes
+> 193 |   React.useEffect(() => {
+      |   ^
+  194 |     if (personalData.idNumber && personalData.surname) {
+  195 |       generateQRCode()
+  196 |     } {
+  digest: '1079852779'
+}
+ GET / 500 in 498ms
+ GET /favicon.ico 200 in 288ms
+ ✓ Compiled in 312ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET / 200 in 512ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 282ms
+ GET / 200 in 242ms
+ GET / 200 in 287ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 342ms
+ GET / 200 in 268ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 309ms
+ GET / 200 in 337ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 268ms
+ GET / 200 in 223ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 280ms
+ ✓ Compiled in 223ms
+ ✓ Compiled in 487ms
+ ⨯ ./app/page.tsx:31:1
+Parsing ecmascript source code failed
+[0m [90m 29 |[39m   photo[33m:[39m string
+ [90m 30 |[39m   signature[33m:[39m string
+[31m[1m>[22m[39m[90m 31 |[39m }
+ [90m    |[39m [31m[1m^[22m[39m
+ [90m 32 |[39m
+ [90m 33 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mIDCardEditor[39m() {
+ [90m 34 |[39m   [36mconst[39m [personalData[33m,[39m setPersonalData] [33m=[39m useState[33m<[39m[33mPersonalData[39m[33m>[39m({[0m
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ GET / 500 in 173ms
+ GET /favicon.ico 500 in 63ms
+ ⨯ ./app/page.tsx:31:1
+Parsing ecmascript source code failed
+[0m [90m 29 |[39m   photo[33m:[39m string
+ [90m 30 |[39m   signature[33m:[39m string
+[31m[1m>[22m[39m[90m 31 |[39m }
+ [90m    |[39m [31m[1m^[22m[39m
+ [90m 32 |[39m
+ [90m 33 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mIDCardEditor[39m() {
+ [90m 34 |[39m   [36mconst[39m [personalData[33m,[39m setPersonalData] [33m=[39m useState[33m<[39m[33mPersonalData[39m[33m>[39m({[0m
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ GET / 500 in 119ms
+ GET /favicon.ico 500 in 60ms
+ ✓ Compiled / in 232ms
+ GET / 200 in 1405ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 443ms
+ GET / 200 in 346ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 468ms
+ GET / 200 in 275ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 346ms
+ ✓ Compiled in 858ms
+ ✓ Compiled in 337ms
+ ✓ Compiled in 261ms
+ GET / 200 in 776ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 379ms
+ ✓ Compiled in 485ms
+ ✓ Compiled in 366ms
+ ✓ Compiled in 252ms
+ ⨯ ./app/page.tsx:33:7
+Ecmascript file had an error
+[0m [90m 31 |[39m
+ [90m 32 |[39m
+[31m[1m>[22m[39m[90m 33 |[39m [36mconst[39m exportBothCardsAsPDF [33m=[39m () [33m=>[39m {
+ [90m    |[39m       [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 34 |[39m   alert([32m'PDF export functionality is available. Due to browser security restrictions, individual PNG exports are recommended for best quality.'[39m)
+ [90m 35 |[39m }
+ [90m 36 |[39m[0m
+
+the name `exportBothCardsAsPDF` is defined multiple times
+
+Import traces:
+  Client Component Browser:
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+ GET / 500 in 149ms
+ GET /favicon.ico 500 in 67ms
+ ✓ Compiled in 290ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled / in 44ms
+ GET / 200 in 740ms
+ GET / 200 in 247ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 280ms
+ GET / 200 in 197ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 264ms
+ GET / 200 in 179ms
+ GET / 200 in 213ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 266ms
+ GET / 200 in 257ms
+ GET / 200 in 351ms
+ GET / 200 in 280ms
+ GET / 200 in 723ms
+ GET / 200 in 257ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 271ms
+ GET / 200 in 2489ms
