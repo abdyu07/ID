@@ -279,3 +279,12 @@ Import traces:
  GET / 200 in 257ms
  GET /favicon.ico?favicon.bf3c9292.ico 200 in 271ms
  GET / 200 in 2489ms
+ GET / 200 in 228ms
+ GET /favicon.ico?favicon.bf3c9292.ico 200 in 272ms
+ GET /?fbclid=IwZXh0bgNhZW0CMTEAAR78mXbmsE4vaOQ8jl-n4sNa1tlHJ7v2gIr_nZG45Sfu9F441jltn0eNDNS6SQ_aem_OYHp_FOElIG6oGztB7E6Ug 200 in 5059ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 3.8s
+ GET /robots.txt 404 in 2013ms
+ GET /robots.txt 404 in 4148ms
+ GET /robots.txt 404 in 1789ms
+ GET /robots.txt 404 in 1805ms
