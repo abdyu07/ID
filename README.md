@@ -104,7 +104,7 @@ The application includes robust export functionality that works around browser s
 This project is for educational purposes only. Please ensure compliance with local laws and regulations.
 
 ## 🙏 Acknowledgments
-
+- @lumefold designer and enginner
 - Built with [Next.js](https://nextjs.org/)
 - UI components from [shadcn/ui](https://ui.shadcn.com/)
 - Icons from [Lucide React](https://lucide.dev/)
